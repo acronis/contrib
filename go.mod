@@ -1,3 +1,7 @@
+// Modified by Acronis International GmbH: removed the indirect requirement on
+// github.com/logrusorgru/aurora/v4 and replaced github.com/99designs/gqlgen with
+// github.com/acronis/gqlgen (gqlgen without aurora); see the git history of this branch.
+
 module entgo.io/contrib
 
 go 1.23.4
@@ -51,7 +55,6 @@ require (
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
 	github.com/hashicorp/hcl/v2 v2.13.0 // indirect
-	github.com/logrusorgru/aurora/v4 v4.0.0 // indirect
 	github.com/mattn/go-colorable v0.1.14 // indirect
 	github.com/mattn/go-isatty v0.0.20 // indirect
 	github.com/mitchellh/go-wordwrap v0.0.0-20150314170334-ad45545899c7 // indirect
@@ -71,3 +74,5 @@ require (
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
+
+replace github.com/99designs/gqlgen => github.com/acronis/gqlgen v0.17.68-acronis.3
